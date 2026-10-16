@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictée 3 (piste 45) · Inspire 3 U5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-violet">
+
+    <header class="site-header">
+        <div class="inner">
+            <a href="index.html" class="brand">
+                <span class="brand-badge">INSPIRE 3</span>
+                <span>
+                    <span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br>
+                    <span class="brand-sub">Inter 5 · Classe inversée</span>
+                </span>
+            </a>
+            <a href="index.html#l19" class="header-pill"><i class="fa-solid fa-house"></i>Retour au parcours</a>
+        </div>
+        <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+        <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="index.html#l19">Leçon 19</a> › Dictée 3 (piste 45)</nav>
+
+        <section class="card page-head">
+            <div class="tags"><span class="tag">Dictée 3</span><span class="tag tag-soft">Après S11</span><span class="tag tag-line">Orthographe</span></div>
+            <h1>Dictée 3 (piste 45)</h1>
+            <p class="section-lead" style="margin:0">Dictée du cahier (L19 · ex. 9) puis entraînement. Point de vigilance : l'accord du participe passé avec avoir quand le COD est placé avant.</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Écouter la piste du cahier</h2>
+            <div id="player"></div>
+            <h3 style="margin:1.25rem 0 .6rem;font-size:1rem">Méthode</h3>
+            <ol class="steps"><li>1<sup>re</sup> écoute en entier, sans écrire.</li><li>2<sup>e</sup> écoute phrase par phrase : mettez sur pause et écrivez dans le cadre ci-dessous.</li><li>3<sup>e</sup> écoute en entier : relisez et vérifiez les accords.</li><li>Relisez avec la liste : l'accord du participe passé avec avoir quand le COD est placé avant.</li><li>Comparez avec le corrigé distribué par l'enseignante et soulignez vos erreurs.</li></ol>
+            
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Ma dictée (piste 45)</h2>
+            <textarea data-note="dictee" style="min-height:10rem" placeholder="Écrivez la dictée ici…" spellcheck="false"></textarea>
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Dictée d'entraînement autocorrigée</h2>
+            <p class="section-lead">Cinq phrases lues par la voix de synthèse du navigateur. Écrivez chaque phrase, puis comparez : le site montre les mots oubliés ou mal écrits.</p>
+            <div id="dictee"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="inner">
+            <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+            <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>Inspire 3, Hachette FLE · pistes audio réservées aux possesseurs du cahier</div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>I3.AudioBox.mount(document.getElementById("player"), "piste45.mp3", "Cahier L19 · ex. 9 · piste 45");</script>
+    <script>I3.Dictee.mount(document.getElementById("dictee"), "dictee-piste45", ["Les fleurs que ma mère avait plantées étaient magnifiques.", "La maison que nous avons louée était orientée plein sud.", "Cette chambre, je l'ai partagée avec ma sœur.", "Les livres qu'il a lus l'ont beaucoup aidé.", "Nos voisins, nous les avons rencontrés dans l'ascenseur."]);</script>
+    <script>I3.keepNotes(location.pathname.split("/").pop());I3.keepChecks(location.pathname.split("/").pop());</script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonétique · [ɥ] / [w] (piste 47) · Inspire 3 U5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-violet">
+
+    <header class="site-header">
+        <div class="inner">
+            <a href="index.html" class="brand">
+                <span class="brand-badge">INSPIRE 3</span>
+                <span>
+                    <span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br>
+                    <span class="brand-sub">Inter 5 · Classe inversée</span>
+                </span>
+            </a>
+            <a href="index.html#l19" class="header-pill"><i class="fa-solid fa-house"></i>Retour au parcours</a>
+        </div>
+        <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+        <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="index.html#l19">Leçon 19</a> › Phonétique · [ɥ] / [w] (piste 47)</nav>
+
+        <section class="card page-head">
+            <div class="tags"><span class="tag">Phonétique</span><span class="tag tag-soft">Après S12</span><span class="tag tag-line">Piste 47</span></div>
+            <h1>Phonétique · [ɥ] / [w] (piste 47)</h1>
+            <p class="section-lead" style="margin:0">Discrimination et répétition. Exercices 11 et 12 du cahier (L19).</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Les deux sons</h2>
+            <div class="grid grid-2">
+                <div class="rule"><h3>[ɥ] · <i>ui</i> : lui, huit, nuit</h3><p>Partez de <b>[y]</b> (lèvres en bisou, langue en avant) et glissez vite vers la voyelle suivante.</p></div>
+                <div class="rule"><h3>[w] · <i>oi, oui</i> : Louis, oui, moi</h3><p>Partez de <b>[u]</b> (langue en arrière) et glissez vite vers la voyelle suivante.</p></div>
+            </div>
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Écouter la piste du cahier</h2>
+            <div id="player"></div>
+            <h3 style="margin:1.25rem 0 .6rem;font-size:1rem">Méthode</h3>
+            <ol class="steps"><li>Écoutez la piste du cahier et faites l'exercice de discrimination.</li><li>Réécoutez et répétez chaque mot à voix haute, en exagérant la position des lèvres.</li><li>Enregistrez-vous (téléphone) et comparez avec la piste.</li></ol>
+            
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Discrimination autocorrigée</h2>
+            <p class="section-lead">Cliquez sur le haut-parleur, puis choisissez le mot entendu.</p>
+            <div id="quiz-phonetique-piste47-plus"></div>
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Écouter et répéter</h2>
+            <ul class="check-list" style="list-style:none"><li class="q-row"><button type="button" class="speak-btn" onclick="I3.say(this.nextElementSibling.textContent,0.8)" aria-label="Écouter"><i class="fa-solid fa-volume-high"></i></button><span>Il fait nuit depuis huit heures.</span></li><li class="q-row"><button type="button" class="speak-btn" onclick="I3.say(this.nextElementSibling.textContent,0.8)" aria-label="Écouter"><i class="fa-solid fa-volume-high"></i></button><span>Louis lui a dit oui.</span></li><li class="q-row"><button type="button" class="speak-btn" onclick="I3.say(this.nextElementSibling.textContent,0.8)" aria-label="Écouter"><i class="fa-solid fa-volume-high"></i></button><span>Il pleut toujours en juin.</span></li><li class="q-row"><button type="button" class="speak-btn" onclick="I3.say(this.nextElementSibling.textContent,0.8)" aria-label="Écouter"><i class="fa-solid fa-volume-high"></i></button><span>Je suis chez moi, au huitième étage.</span></li></ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="inner">
+            <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+            <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>Inspire 3, Hachette FLE · pistes audio réservées aux possesseurs du cahier</div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>I3.AudioBox.mount(document.getElementById("player"), "piste47.mp3", "Cahier L19 · piste 47");</script>
+    <script>I3.Quiz.mount(document.getElementById("quiz-phonetique-piste47-plus"), "phonetique-piste47-plus", [
+ {
+  "type": "choice",
+  "say": "lui",
+  "prompt": "Écoutez. Quel mot entendez-vous ?",
+  "options": [
+   "lui",
+   "Louis"
+  ],
+  "answer": 0
+ },
+ {
+  "type": "choice",
+  "say": "joint",
+  "prompt": "Écoutez. Quel mot entendez-vous ?",
+  "options": [
+   "juin",
+   "joint"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "choice",
+  "say": "muette",
+  "prompt": "Écoutez. Quel mot entendez-vous ?",
+  "options": [
+   "muette",
+   "mouette"
+  ],
+  "answer": 0
+ },
+ {
+  "type": "choice",
+  "say": "enfouie",
+  "prompt": "Écoutez. Quel mot entendez-vous ?",
+  "options": [
+   "enfuie",
+   "enfouie"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "choice",
+  "say": "nuée",
+  "prompt": "Écoutez. Quel mot entendez-vous ?",
+  "options": [
+   "nuée",
+   "nouée"
+  ],
+  "answer": 0
+ },
+ {
+  "type": "choice",
+  "say": "oui",
+  "prompt": "Écoutez. Quel mot entendez-vous ?",
+  "options": [
+   "huit",
+   "oui"
+  ],
+  "answer": 1
+ }
+]);</script>
+
+</body>
+</html>

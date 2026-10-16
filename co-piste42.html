@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO 3 · Visite de Toulouse (piste 42) · Inspire 3 U5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-bleu">
+
+    <header class="site-header">
+        <div class="inner">
+            <a href="index.html" class="brand">
+                <span class="brand-badge">INSPIRE 3</span>
+                <span>
+                    <span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br>
+                    <span class="brand-sub">Inter 5 · Classe inversée</span>
+                </span>
+            </a>
+            <a href="index.html#l18" class="header-pill"><i class="fa-solid fa-house"></i>Retour au parcours</a>
+        </div>
+        <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+        <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="index.html#l18">Leçon 18</a> › CO 3 · Visite de Toulouse (piste 42)</nav>
+
+        <section class="card page-head">
+            <div class="tags"><span class="tag">CO 3</span><span class="tag tag-soft">Après S7</span><span class="tag tag-line">Compréhension orale</span></div>
+            <h1>CO 3 · Visite de Toulouse (piste 42)</h1>
+            <p class="section-lead" style="margin:0">Compréhension globale puis détaillée d'une visite guidée. Repérez aussi les expressions du guide : elles serviront pour Agir 11.</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Écouter la piste du cahier</h2>
+            <div id="player"></div>
+            <h3 style="margin:1.25rem 0 .6rem;font-size:1rem">Méthode</h3>
+            <ol class="steps"><li>Lisez les questions de l'exercice 1 (cahier p. 64) : que cherchez-vous ?</li><li>1<sup>re</sup> écoute, compréhension globale : qui parle ? à qui ? où ? pourquoi ?</li><li>Pause de 30 secondes : complétez votre prise de notes.</li><li>2<sup>e</sup> écoute, compréhension détaillée : lieux, dates, chiffres, expressions du guide.</li><li>Répondez dans le cahier, puis comparez avec le corrigé.</li></ol>
+            
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Ma prise de notes</h2>
+            <p class="muted">Vos notes restent enregistrées dans ce navigateur.</p>
+            <div class="notes-grid"><label>Qui ? À qui ?<textarea data-note="Qui ? À qui ?"></textarea></label><label>Où ? (lieux visités)<textarea data-note="Où ? (lieux visités)"></textarea></label><label>Quand ? (dates, époques)<textarea data-note="Quand ? (dates, époques)"></textarea></label><label>Expressions du guide<textarea data-note="Expressions du guide"></textarea></label></div>
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Entraînement complémentaire : une visite du Havre</h2>
+            <p class="section-lead">Écoutez la visite (premier haut-parleur, deux fois si nécessaire), puis répondez aux six questions.</p>
+            <div id="quiz-co-piste42-plus"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="inner">
+            <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+            <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>Inspire 3, Hachette FLE · pistes audio réservées aux possesseurs du cahier</div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>I3.AudioBox.mount(document.getElementById("player"), "piste42.mp3", "Cahier L18 · exercice 1 · piste 42");</script>
+    <script>I3.Quiz.mount(document.getElementById("quiz-co-piste42-plus"), "co-piste42-plus", [
+ {
+  "type": "choice",
+  "say": "Bienvenue au Havre ! Suivez-moi, s'il vous plaît. Nous sommes devant l'hôtel de ville. Pendant la Seconde Guerre mondiale, le centre avait été presque entièrement détruit. Entre 1945 et 1964, l'architecte Auguste Perret a reconstruit la ville en béton. Regardez maintenant à votre gauche : c'est l'église Saint-Joseph. Sa tour mesure 107 mètres et on la voit depuis la mer. Depuis 2005, le centre-ville est inscrit au patrimoine mondial de l'Unesco.",
+  "prompt": "Qui parle ?",
+  "options": [
+   "un architecte",
+   "un guide",
+   "un habitant"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "choice",
+  "prompt": "Où commence la visite ?",
+  "options": [
+   "devant l'église",
+   "devant l'hôtel de ville",
+   "sur le front de mer"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "choice",
+  "prompt": "Quand a-t-on reconstruit la ville ?",
+  "options": [
+   "entre 1945 et 1964",
+   "dans les années 80",
+   "en 2005"
+  ],
+  "answer": 0
+ },
+ {
+  "type": "choice",
+  "prompt": "Combien mesure la tour de l'église Saint-Joseph ?",
+  "options": [
+   "70 mètres",
+   "107 mètres",
+   "170 mètres"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "choice",
+  "prompt": "Depuis quand le centre est-il inscrit à l'Unesco ?",
+  "options": [
+   "1964",
+   "1995",
+   "2005"
+  ],
+  "answer": 2
+ },
+ {
+  "type": "choice",
+  "prompt": "Quelle expression du guide entendez-vous ?",
+  "options": [
+   "« Suivez-moi »",
+   "« Asseyez-vous »",
+   "« Attendez ici »"
+  ],
+  "answer": 0
+ }
+]);</script>
+    <script>I3.keepNotes(location.pathname.split("/").pop());I3.keepChecks(location.pathname.split("/").pop());</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO 4 · Bilan : le permis de végétaliser (piste 48) · Inspire 3 U5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-rouge">
+
+    <header class="site-header">
+        <div class="inner">
+            <a href="index.html" class="brand">
+                <span class="brand-badge">INSPIRE 3</span>
+                <span>
+                    <span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br>
+                    <span class="brand-sub">Inter 5 · Classe inversée</span>
+                </span>
+            </a>
+            <a href="index.html#bilan" class="header-pill"><i class="fa-solid fa-house"></i>Retour au parcours</a>
+        </div>
+        <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+        <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="index.html#bilan">Bilan</a> › CO 4 · Bilan : le permis de végétaliser (piste 48)</nav>
+
+        <section class="card page-head">
+            <div class="tags"><span class="tag">CO 4</span><span class="tag tag-soft">Avant S15 · bilan à la maison</span><span class="tag tag-line">Compréhension orale</span></div>
+            <h1>CO 4 · Bilan : le permis de végétaliser (piste 48)</h1>
+            <p class="section-lead" style="margin:0">Compréhension orale du bilan de l'unité, notée comme le bilan du cahier. À faire le week-end du 7-8 novembre avec la CE (Quai Branly) et la PE (Nantes).</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Écouter la piste du cahier</h2>
+            <div id="player"></div>
+            <h3 style="margin:1.25rem 0 .6rem;font-size:1rem">Méthode</h3>
+            <ol class="steps"><li>Conditions d'examen : lisez les questions du bilan (cahier p. 72) pendant 1 minute.</li><li>1<sup>re</sup> écoute, puis 1 minute pour commencer à répondre.</li><li>2<sup>e</sup> écoute, puis 2 minutes pour compléter vos réponses.</li><li>Ne réécoutez pas avant d'avoir noté votre score avec le corrigé : c'est une évaluation.</li></ol>
+            <div class="callout callout-warn" style="margin-top:1rem"><i class="fa-solid fa-triangle-exclamation"></i> Bilan noté : deux écoutes seulement, comme au DELF.</div>
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Ma prise de notes</h2>
+            <p class="muted">Vos notes restent enregistrées dans ce navigateur.</p>
+            <div class="notes-grid"><label>Mes réponses<textarea data-note="Mes réponses"></textarea></label><label>Mes mots-clés<textarea data-note="Mes mots-clés"></textarea></label></div>
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Mon score</h2>
+            <p class="muted">Après correction, notez votre score : il est envoyé avec la CE et la PE du bilan.</p>
+            <textarea data-note="score" style="min-height:3rem" placeholder="Score CO : … / …"></textarea>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="inner">
+            <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+            <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>Inspire 3, Hachette FLE · pistes audio réservées aux possesseurs du cahier</div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>I3.AudioBox.mount(document.getElementById("player"), "piste48.mp3", "Cahier · Bilan de l'unité 5 · piste 48");</script>
+    <script>I3.keepNotes(location.pathname.split("/").pop());I3.keepChecks(location.pathname.split("/").pop());</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO 2 · Le plus-que-parfait (piste 43) · Inspire 3 U5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-bleu">
+
+    <header class="site-header">
+        <div class="inner">
+            <a href="index.html" class="brand">
+                <span class="brand-badge">INSPIRE 3</span>
+                <span>
+                    <span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br>
+                    <span class="brand-sub">Inter 5 · Classe inversée</span>
+                </span>
+            </a>
+            <a href="index.html#l18" class="header-pill"><i class="fa-solid fa-house"></i>Retour au parcours</a>
+        </div>
+        <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+        <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="index.html#l18">Leçon 18</a> › CO 2 · Le plus-que-parfait (piste 43)</nav>
+
+        <section class="card page-head">
+            <div class="tags"><span class="tag">CO 2</span><span class="tag tag-soft">Après S6</span><span class="tag tag-line">Compréhension orale</span></div>
+            <h1>CO 2 · Le plus-que-parfait (piste 43)</h1>
+            <p class="section-lead" style="margin:0">Repérer l'action antérieure. À faire avec la capsule 4, avant la séance 7.</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Écouter la piste du cahier</h2>
+            <div id="player"></div>
+            <h3 style="margin:1.25rem 0 .6rem;font-size:1rem">Méthode</h3>
+            <ol class="steps"><li>Lisez la consigne de l'exercice 6 du cahier (L18).</li><li>1<sup>re</sup> écoute : repérez les verbes au plus-que-parfait (avait…, était…).</li><li>2<sup>e</sup> écoute : pour chaque phrase, quelle action est la <b>première</b> ?</li><li>Corrigez avec le corrigé du cahier.</li></ol>
+            
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Entraînement complémentaire : l'action antérieure</h2>
+            
+            <div id="quiz-co-piste43-plus"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="inner">
+            <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+            <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>Inspire 3, Hachette FLE · pistes audio réservées aux possesseurs du cahier</div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>I3.AudioBox.mount(document.getElementById("player"), "piste43.mp3", "Cahier L18 · exercice 6 · piste 43");</script>
+    <script>I3.Quiz.mount(document.getElementById("quiz-co-piste43-plus"), "co-piste43-plus", [
+ {
+  "type": "choice",
+  "say": "Quand je suis arrivée à la gare, le train était déjà parti.",
+  "prompt": "Écoutez. Quelle action a eu lieu en premier ?",
+  "options": [
+   "J'arrive à la gare.",
+   "Le train part."
+  ],
+  "answer": 1
+ },
+ {
+  "type": "choice",
+  "say": "Nous avons visité le musée que tu nous avais conseillé.",
+  "prompt": "Écoutez. Quelle action a eu lieu en premier ?",
+  "options": [
+   "Tu conseilles le musée.",
+   "Nous visitons le musée."
+  ],
+  "answer": 0
+ },
+ {
+  "type": "choice",
+  "say": "Il a reconnu la ville où il avait passé son enfance.",
+  "prompt": "Écoutez. Quelle action a eu lieu en premier ?",
+  "options": [
+   "Il reconnaît la ville.",
+   "Il passe son enfance dans la ville."
+  ],
+  "answer": 1
+ },
+ {
+  "type": "choice",
+  "say": "Elle n'avait jamais vu la mer avant de venir au Havre.",
+  "prompt": "Écoutez. Quelle action a eu lieu en premier ?",
+  "options": [
+   "Elle vient au Havre.",
+   "Elle ne voit pas la mer."
+  ],
+  "answer": 1
+ },
+ {
+  "type": "choice",
+  "say": "On a démoli l'immeuble qu'on avait construit en 1960.",
+  "prompt": "Écoutez. Quelle action a eu lieu en premier ?",
+  "options": [
+   "On construit l'immeuble.",
+   "On démolit l'immeuble."
+  ],
+  "answer": 0
+ },
+ {
+  "type": "choice",
+  "say": "Le guide nous a expliqué que la tour avait été restaurée.",
+  "prompt": "Écoutez. Quelle action a eu lieu en premier ?",
+  "options": [
+   "La tour est restaurée.",
+   "Le guide explique."
+  ],
+  "answer": 0
+ }
+]);</script>
+
+</body>
+</html>

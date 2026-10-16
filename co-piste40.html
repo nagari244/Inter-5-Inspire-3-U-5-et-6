@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO 1 · Le gérondif (piste 40) · Inspire 3 U5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-vert">
+
+    <header class="site-header">
+        <div class="inner">
+            <a href="index.html" class="brand">
+                <span class="brand-badge">INSPIRE 3</span>
+                <span>
+                    <span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br>
+                    <span class="brand-sub">Inter 5 · Classe inversée</span>
+                </span>
+            </a>
+            <a href="index.html#l17" class="header-pill"><i class="fa-solid fa-house"></i>Retour au parcours</a>
+        </div>
+        <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+        <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="index.html#l17">Leçon 17</a> › CO 1 · Le gérondif (piste 40)</nav>
+
+        <section class="card page-head">
+            <div class="tags"><span class="tag">CO 1</span><span class="tag tag-soft">Après S3</span><span class="tag tag-line">Compréhension orale</span></div>
+            <h1>CO 1 · Le gérondif (piste 40)</h1>
+            <p class="section-lead" style="margin:0">Entendre le gérondif et retrouver l'infinitif. Travail en autonomie : la CO du cahier ne se fait plus en classe.</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Écouter la piste du cahier</h2>
+            <div id="player"></div>
+            <h3 style="margin:1.25rem 0 .6rem;font-size:1rem">Méthode</h3>
+            <ol class="steps"><li>Lisez la consigne de l'exercice 7 du cahier (L17) avant d'écouter.</li><li>1<sup>re</sup> écoute : levez la main (ou notez un trait) chaque fois que vous entendez <b>en + -ant</b>.</li><li>2<sup>e</sup> écoute : écrivez chaque gérondif et retrouvez son infinitif.</li><li>Corrigez avec le corrigé du cahier publié après la séance 3.</li></ol>
+            
+        </section>
+        <section class="card">
+            <h2 class="section-title"><span class="dot"></span>Entraînement complémentaire : entendre le gérondif</h2>
+            <p class="section-lead">Cliquez sur le haut-parleur (voix de synthèse du navigateur), puis écrivez l'infinitif du verbe au gérondif.</p>
+            <div id="quiz-co-piste40-plus"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="inner">
+            <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+            <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>Inspire 3, Hachette FLE · pistes audio réservées aux possesseurs du cahier</div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+    <script>I3.AudioBox.mount(document.getElementById("player"), "piste40.mp3", "Cahier L17 · exercice 7 · piste 40");</script>
+    <script>I3.Quiz.mount(document.getElementById("quiz-co-piste40-plus"), "co-piste40-plus", [
+ {
+  "type": "input",
+  "say": "Les habitants embellissent la rue en plantant des fleurs.",
+  "prompt": "Écoutez. Infinitif du gérondif : ___",
+  "answer": "planter"
+ },
+ {
+  "type": "input",
+  "say": "On réduit le bruit en limitant les voitures.",
+  "prompt": "Écoutez. Infinitif du gérondif : ___",
+  "answer": "limiter"
+ },
+ {
+  "type": "input",
+  "say": "Je me détends en lisant au parc.",
+  "prompt": "Écoutez. Infinitif du gérondif : ___",
+  "answer": "lire"
+ },
+ {
+  "type": "input",
+  "say": "Elle apprend le français en regardant des séries.",
+  "prompt": "Écoutez. Infinitif du gérondif : ___",
+  "answer": "regarder"
+ },
+ {
+  "type": "input",
+  "say": "Nous économisons de l'eau en récupérant la pluie.",
+  "prompt": "Écoutez. Infinitif du gérondif : ___",
+  "answer": "récupérer"
+ },
+ {
+  "type": "input",
+  "say": "Tu te sentiras mieux en faisant du vélo.",
+  "prompt": "Écoutez. Infinitif du gérondif : ___",
+  "answer": "faire"
+ },
+ {
+  "type": "input",
+  "say": "Ils ont eu cette idée en discutant avec les voisins.",
+  "prompt": "Écoutez. Infinitif du gérondif : ___",
+  "answer": "discuter"
+ },
+ {
+  "type": "input",
+  "say": "En choisissant des plantes locales, on protège la biodiversité.",
+  "prompt": "Écoutez. Infinitif du gérondif : ___",
+  "answer": "choisir"
+ }
+]);</script>
+
+</body>
+</html>
