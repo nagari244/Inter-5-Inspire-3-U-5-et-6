@@ -10,6 +10,20 @@ Séquence pédagogique en classe inversée pour l'unité 5 d'Inspire 3, « Comme
 - `assets/style.css` : palette reprise de « DELF B1 – Compréhension de l'oral ». Fond clair, bleu marine, les cinq couleurs de la Francophonie, aucun dégradé.
 - `assets/app.js` : exercices autocorrigés, lecteur audio, dictées, scores gardés dans le navigateur.
 
+## Systématisation du plus-que-parfait (leçons 18-19)
+
+Page d'entrée : `systematisation-pqp.html` (carte « Systématisation » dans le mini-site d'autonomie).
+
+- `u5-vocabulaire-ville.html` : localisation, articles contractés, mots de la ville.
+- `u5-pqp-1-formation.html` : formation, choix de l'auxiliaire, conjugaison avec explication de chaque erreur.
+- `u5-pqp-2-pc-pqp.html` : le passé composé est le repère, le plus-que-parfait revient en arrière.
+- `u5-pqp-3-ecoute.html` : écoute « Ma première salle de bains » (témoignage imaginé) et médiation.
+- `u5-pqp-4-micro-dialogues.html` : cartes de micro-dialogues, dont médiation, et minuteur.
+- `u5-pqp-5-ecrit.html` : sujets de production écrite, à rédiger sur papier ou dans un document.
+- `assets/systematisation.css` et `assets/exercices.js` : style et moteur propres à ces pages. Ils ne modifient ni `assets/style.css` ni `assets/app.js`.
+
+L'écoute utilise la voix française du navigateur. Pour la remplacer par un enregistrement, déposer `audio/u5-ecoute-odette.mp3` : comme `.gitignore` exclut les MP3, l'ajouter avec `git add -f audio/u5-ecoute-odette.mp3`.
+
 ## L'audio et les droits
 
 Les pistes MP3 du cahier ne sont **pas** publiées : `.gitignore` les exclut du dépôt. Chaque page d'écoute offre deux possibilités :

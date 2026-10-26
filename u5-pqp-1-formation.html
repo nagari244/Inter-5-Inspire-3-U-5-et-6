@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le plus-que-parfait (1) : la formation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/systematisation.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a href="index.html" class="brand">
+      <span class="brand-badge">INSPIRE 3</span>
+      <span><span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br><span class="brand-sub">Inter 5 · Systématisation du plus-que-parfait</span></span>
+    </a>
+    <a href="systematisation-pqp.html" class="header-pill"><i class="fa-solid fa-list-check"></i>Les 6 activités</a>
+  </div>
+  <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+</header>
+<main>
+  <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="systematisation-pqp.html">Plus-que-parfait : systématisation</a> › Formation</nav>
+  <p class="kicker">Unité 5 · Leçon 18 · Grammaire</p>
+  <h1>Le plus-que-parfait (1) : la formation</h1>
+  <p class="lead">Le plus-que-parfait sert à parler d'une action passée qui a eu lieu <b>avant</b> une autre action passée.</p>
+
+  <div class="box">
+    <p class="formule">Auxiliaire <b>avoir</b> ou <b>être</b> à l'<b>imparfait</b> + <b>participe passé</b></p>
+    <p>Avant ce projet, l'architecte <span class="pqp">avait</span> déjà <span class="pqp">imposé</span> son style.<br>
+    François I<sup>er</sup> <span class="pqp">avait bâti</span> le premier port auparavant, en 1517.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th></th><th>avoir → construire</th><th>être → arriver</th></tr></thead>
+      <tbody>
+        <tr><td>j'</td><td><span class="pqp">avais</span> construit</td><td><span class="pqp">étais</span> arrivé(e)</td></tr>
+        <tr><td>tu</td><td><span class="pqp">avais</span> construit</td><td><span class="pqp">étais</span> arrivé(e)</td></tr>
+        <tr><td>il / elle / on</td><td><span class="pqp">avait</span> construit</td><td><span class="pqp">était</span> arrivé(e)</td></tr>
+        <tr><td>nous</td><td><span class="pqp">avions</span> construit</td><td><span class="pqp">étions</span> arrivé(e)s</td></tr>
+        <tr><td>vous</td><td><span class="pqp">aviez</span> construit</td><td><span class="pqp">étiez</span> arrivé(e)(s)</td></tr>
+        <tr><td>ils / elles</td><td><span class="pqp">avaient</span> construit</td><td><span class="pqp">étaient</span> arrivé(e)s</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box">
+    <h3>À retenir</h3>
+    <p><b>Même auxiliaire qu'au passé composé.</b> Seul l'auxiliaire change de temps : <span class="pc">elle est partie</span> → <span class="pqp">elle était partie</span>.</p>
+    <p><b>Avec être</b>, le participe s'accorde avec le sujet : <i>Mes sœurs étaient parties.</i></p>
+    <p><b>Verbes avec être</b> : aller, venir (revenir, devenir), arriver, partir, entrer, rentrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, passer (par)… et <b>tous les verbes pronominaux</b> : <i>elle s'était installée</i>.</p>
+    <p><b>Participes irréguliers utiles</b> : faire → fait · prendre → pris · mettre → mis · construire → construit · détruire → détruit · concevoir → conçu · voir → vu · vivre → vécu · lire → lu · perdre → perdu · naître → né · avoir → eu · être → été.</p>
+  </div>
+
+  <h2>Pratique</h2>
+  <div id="ex1"></div>
+  <div id="ex2"></div>
+  <div id="ex3"></div>
+
+  <p>Suite : <a href="u5-pqp-2-pc-pqp.html">Le plus-que-parfait (2) : avec le passé composé →</a></p>
+  <p class="note-pied">Exemples du cours : Inspire 3, leçon 18, p. 85.</p>
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+    <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>D'après Inspire 3, Hachette FLE</div>
+  </div>
+</footer>
+
+<script src="assets/exercices.js"></script>
+<script>
+var CTX_ETRE = "verbe de la liste des verbes avec être";
+Exos.qcm(document.getElementById("ex1"), {
+  num: 1, color: "c-violet", titre: "Avoir ou être ?",
+  consigne: "Choisissez l'auxiliaire de chaque verbe.",
+  items: [
+    { q: "construire", options: ["avoir", "être"], answer: 0, ok: "On construit <i>quelque chose</i> : il <b>avait</b> construit.", fb: { 1: "Construire n'est pas dans la liste des verbes avec être." } },
+    { q: "arriver", options: ["avoir", "être"], answer: 1, ok: "Il <b>était</b> arrivé.", fb: { 0: "Arriver fait partie de la liste des verbes avec être (mouvement)." } },
+    { q: "s'installer", options: ["avoir", "être"], answer: 1, ok: "Elle s'<b>était</b> installée.", fb: { 0: "Tous les verbes pronominaux (se…, s'…) se conjuguent avec être." } },
+    { q: "habiter", options: ["avoir", "être"], answer: 0, ok: "Nous <b>avions</b> habité à Brest.", fb: { 1: "Habiter n'est pas dans la liste des verbes avec être." } },
+    { q: "naître", options: ["avoir", "être"], answer: 1, ok: "Elle <b>était</b> née au Havre.", fb: { 0: "Naître (et mourir) se conjuguent avec être." } },
+    { q: "vivre", options: ["avoir", "être"], answer: 0, ok: "Ils <b>avaient</b> vécu dans une baraque.", fb: { 1: "Vivre ne fait pas partie de la liste : on dit « il avait vécu »." } },
+    { q: "déménager", options: ["avoir", "être"], answer: 0, ok: "Piège ! Même s'il exprime un changement de lieu, déménager se conjugue avec avoir : nous <b>avions</b> déménagé.", fb: { 1: "Attention, piège : déménager n'est pas dans la liste. On dit « nous avions déménagé »." } },
+    { q: "rester", options: ["avoir", "être"], answer: 1, ok: "Rester est dans la liste, même s'il n'exprime pas un mouvement : ils <b>étaient</b> restés.", fb: { 0: "Rester fait partie de la liste des verbes avec être." } },
+    { q: "partir", options: ["avoir", "être"], answer: 1, ok: "Tu <b>étais</b> parti(e).", fb: { 0: "Partir est un verbe de mouvement de la liste : être." } }
+  ]
+});
+
+Exos.qcm(document.getElementById("ex2"), {
+  num: 2, color: "c-bleu", titre: "Quel temps ?",
+  consigne: "Passé composé, plus-que-parfait ou imparfait ?",
+  items: [
+    { q: "elle <b>était partie</b>", options: ["passé composé", "plus-que-parfait", "imparfait"], answer: 1, ok: "Auxiliaire à l'imparfait (était) + participe (partie).", fb: { 0: "« Était » est à l'imparfait, pas au présent : ce n'est pas un passé composé.", 2: "Il y a un participe passé (partie) : c'est un temps composé." } },
+    { q: "ils <b>ont construit</b>", options: ["passé composé", "plus-que-parfait", "imparfait"], answer: 0, ok: "« Ont » est au présent : passé composé.", fb: { 1: "« Ont » est au présent, pas à l'imparfait (« avaient »).", 2: "Il y a un auxiliaire + un participe : c'est un temps composé." } },
+    { q: "nous <b>habitions</b>", options: ["passé composé", "plus-que-parfait", "imparfait"], answer: 2, ok: "Un seul mot, terminaison -ions : imparfait.", fb: { 0: "Il n'y a qu'un mot : ce n'est pas un temps composé.", 1: "Il n'y a pas de participe passé : ce n'est pas un temps composé." } },
+    { q: "vous <b>aviez vu</b>", options: ["passé composé", "plus-que-parfait", "imparfait"], answer: 1, ok: "Aviez (imparfait) + vu (participe).", fb: { 0: "« Aviez » est à l'imparfait (au présent : avez).", 2: "Il y a un participe passé (vu) : c'est un temps composé." } },
+    { q: "tu <b>étais</b> fatigué", options: ["passé composé", "plus-que-parfait", "imparfait"], answer: 2, ok: "Ici, être est le verbe principal (+ un adjectif) : imparfait.", fb: { 1: "« Fatigué » est un adjectif ici : être est le verbe principal, à l'imparfait.", 0: "« Étais » est à l'imparfait." } },
+    { q: "je <b>suis né</b>", options: ["passé composé", "plus-que-parfait", "imparfait"], answer: 0, ok: "Suis (présent) + né : passé composé.", fb: { 1: "« Suis » est au présent : c'est un passé composé.", 2: "Il y a un participe passé (né) : temps composé." } },
+    { q: "on <b>avait vécu</b>", options: ["passé composé", "plus-que-parfait", "imparfait"], answer: 1, ok: "Avait (imparfait) + vécu.", fb: { 0: "« Avait » est à l'imparfait (au présent : a).", 2: "Il y a un participe passé (vécu) : temps composé." } }
+  ]
+});
+
+Exos.conj(document.getElementById("ex3"), {
+  num: 3, color: "c-vert", titre: "Conjuguez au plus-que-parfait",
+  consigne: "Écrivez seulement le verbe conjugué (auxiliaire + participe). Le correcteur vous explique chaque erreur.",
+  items: [
+    { text: "En 1945, la ville ___ (être) détruite par les bombardements de 1944.", verb: "être", subj: "la ville", p: 2, aux: "avoir", pp: "été", hint: "être → été (participe irrégulier)." },
+    { text: "Auguste Perret ___ (construire) le théâtre des Champs-Élysées.", verb: "construire", subj: "Auguste Perret", p: 2, aux: "avoir", pp: "construit", hint: "construire → construit." },
+    { text: "Les habitants ___ (perdre) leur logement.", verb: "perdre", subj: "les habitants", p: 5, aux: "avoir", pp: "perdu", hint: "perdre → perdu." },
+    { text: "Ma grand-mère ___ (naître) dans une petite rue près du port.", verb: "naître", subj: "ma grand-mère", p: 2, aux: "etre", pp: "né", acc: "e", why: CTX_ETRE, hint: "naître → né." },
+    { text: "Nous ___ (vivre) deux ans dans une baraque provisoire.", verb: "vivre", subj: "nous", p: 3, aux: "avoir", pp: "vécu", hint: "vivre → vécu." },
+    { text: "Mes parents ___ (arriver) au Havre en 1950.", verb: "arriver", subj: "mes parents", p: 5, aux: "etre", pp: "arrivé", acc: "s", why: CTX_ETRE },
+    { text: "Elle ___ (s'installer) au cinquième étage.", verb: "s'installer", subj: "elle", p: 2, aux: "etre", pp: "installé", acc: "e", pron: "s'", why: "verbe pronominal" },
+    { text: "Vous ___ (voir) l'appartement témoin ?", verb: "voir", subj: "vous", p: 4, aux: "avoir", pp: "vu", hint: "voir → vu." },
+    { text: "Tu ___ (prendre) des photos du front de mer.", verb: "prendre", subj: "tu", p: 1, aux: "avoir", pp: "pris", hint: "prendre → pris." },
+    { text: "Avant mes vingt ans, j'___ (déménager) trois fois.", verb: "déménager", subj: "je", p: 0, aux: "avoir", pp: "déménagé", hint: "verbe en -er → -é." },
+    { text: "Les architectes ___ (concevoir) des logements avec deux orientations.", verb: "concevoir", subj: "les architectes", p: 5, aux: "avoir", pp: "conçu", hint: "concevoir → conçu (avec ç)." },
+    { text: "Mes sœurs ___ (partir) avant moi.", verb: "partir", subj: "mes sœurs", p: 5, aux: "etre", pp: "parti", acc: "es", why: CTX_ETRE },
+    { text: "Nous ___ (rester) chez nos grands-parents pendant la reconstruction.", verb: "rester", subj: "nous", p: 3, aux: "etre", pp: "resté", acc: "s", alts: ["étions restées"], why: CTX_ETRE }
+  ]
+});
+</script>
+</body>
+</html>
