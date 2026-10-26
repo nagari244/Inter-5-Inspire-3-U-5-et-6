@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vocabulaire : la ville et la localisation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/systematisation.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a href="index.html" class="brand">
+      <span class="brand-badge">INSPIRE 3</span>
+      <span><span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br><span class="brand-sub">Inter 5 · Systématisation du plus-que-parfait</span></span>
+    </a>
+    <a href="systematisation-pqp.html" class="header-pill"><i class="fa-solid fa-list-check"></i>Les 6 activités</a>
+  </div>
+  <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+</header>
+<main>
+  <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="systematisation-pqp.html">Plus-que-parfait : systématisation</a> › Vocabulaire</nav>
+  <p class="kicker">Unité 5 · Leçon 17 · Vocabulaire</p>
+  <h1>Vocabulaire : la ville et la localisation</h1>
+  <p class="lead">Situer un lieu dans la ville : prépositions et articles contractés.</p>
+
+  <div class="box">
+    <h3>Les articles contractés</h3>
+    <p><b>de + le = du</b> : à côté <b>du</b> métro · autour <b>du</b> jardin<br>
+    <b>de + les = des</b> : autour <b>des</b> places<br>
+    <b>de la</b> et <b>de l'</b> ne changent pas : au milieu <b>de la</b> place · le long <b>de l'</b>avenue</p>
+    <p class="notice">Devant une voyelle ou un h muet : <b>de l'</b> (de l'avenue, de l'hôtel de ville).</p>
+    <p><b>Sans préposition</b> : <i>border</i> et <i>longer</i> : Les arbres <b>longent</b> l'avenue. Le parc <b>borde</b> le fleuve.</p>
+  </div>
+
+  <div id="ex1"></div>
+  <div id="ex2"></div>
+
+  <p>Suite : <a href="u5-pqp-1-formation.html">Le plus-que-parfait (1) →</a></p>
+  <p class="note-pied">Vocabulaire : Inspire 3, leçon 17, p. 84.</p>
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+    <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>D'après Inspire 3, Hachette FLE</div>
+  </div>
+</footer>
+
+<script src="assets/exercices.js"></script>
+<script>
+var DU = "de + le = du (article contracté).";
+Exos.qcm(document.getElementById("ex1"), {
+  num: 1, color: "c-bleu", titre: "Où est-ce ?",
+  consigne: "Choisissez la bonne forme.",
+  items: [
+    { q: "La statue est ___ jardin.", options: ["au milieu du", "au milieu de le", "au milieu de la"], answer: 0, ok: DU, fb: { 1: "On ne dit jamais « de le » : " + DU, 2: "Jardin est masculin (le jardin)." } },
+    { q: "Les arbres sont plantés le long ___ avenue.", options: ["du", "de la", "de l'"], answer: 2, ok: "Avenue commence par une voyelle : de l'.", fb: { 0: "Avenue est féminin : pas « du ».", 1: "Devant une voyelle, la devient l' : de l'avenue." } },
+    { q: "Les bâtiments sont construits ___ jardin.", options: ["autour de le", "autour du", "autour de la"], answer: 1, ok: DU, fb: { 0: "On ne dit jamais « de le » : " + DU, 2: "Jardin est masculin." } },
+    { q: "La piste cyclable est à côté ___ trottoir.", options: ["du", "de le", "des"], answer: 0, ok: DU, fb: { 1: DU, 2: "Trottoir est au singulier." } },
+    { q: "Une voie de circulation passe ___ le pont.", options: ["sous", "le long", "au milieu"], answer: 0, ok: "Sous le pont : sans « de ».", fb: { 1: "« Le long » demande « de » : le long du pont. Et ici, la voie passe en dessous.", 2: "« Au milieu » demande « de » : au milieu du pont." } },
+    { q: "Le parc se trouve à côté ___ hôtel de ville.", options: ["du", "de l'", "de la"], answer: 1, ok: "Hôtel commence par un h muet : de l'hôtel de ville.", fb: { 0: "Devant un h muet, on écrit de l' (comme devant une voyelle).", 2: "Hôtel est masculin, et commence par un h muet : de l'." } },
+    { q: "Les arbres sont plantés autour ___ places.", options: ["de les", "des", "de la"], answer: 1, ok: "de + les = des.", fb: { 0: "On ne dit jamais « de les » : de + les = des.", 2: "Places est au pluriel." } },
+    { q: "Notre immeuble borde ___ fleuve.", options: ["du", "au", "le"], answer: 2, ok: "Border se construit sans préposition : on borde quelque chose.", fb: { 0: "Border n'a pas de préposition : le parc borde le fleuve.", 1: "Pas de préposition après border." } }
+  ]
+});
+
+Exos.qcm(document.getElementById("ex2"), {
+  num: 2, color: "c-vert", titre: "Les mots de la ville",
+  consigne: "Quel mot correspond à la définition ?",
+  melanger: true,
+  items: [
+    { q: "La partie de la rue réservée aux piétons.", options: ["un trottoir", "une avenue", "un axe"], answer: 0, fb: { 1: "Une avenue est une grande rue, pas seulement pour les piétons.", 2: "Un axe est une grande voie de circulation." } },
+    { q: "Interdire les voitures dans une rue.", options: ["la végétalisation", "la piétonisation", "le réaménagement"], answer: 1, fb: { 0: "La végétalisation, c'est mettre des plantes.", 2: "Le réaménagement est plus général : c'est transformer un lieu." } },
+    { q: "Mettre des plantes et des arbres dans la ville.", options: ["la végétalisation", "la faisabilité", "la biodiversité"], answer: 0, fb: { 1: "La faisabilité : est-ce possible ou non ?", 2: "La biodiversité, c'est la variété des espèces vivantes." } },
+    { q: "Un espace avec des jeux pour les enfants.", options: ["une promenade", "une aire de jeux", "une cour d'immeuble"], answer: 1, fb: { 0: "Une promenade sert à marcher.", 2: "Une cour d'immeuble est l'espace à l'intérieur d'un immeuble." } },
+    { q: "Une voie réservée aux vélos.", options: ["un trottoir", "une piste cyclable", "un axe de circulation"], answer: 1, fb: { 0: "Le trottoir est pour les piétons.", 2: "Un axe de circulation est pour tous les véhicules." } },
+    { q: "La terre autour d'un arbre, dans la rue.", options: ["un pied d'arbre", "un balcon", "un jardin partagé"], answer: 0, fb: { 2: "Un jardin partagé est plus grand et cultivé par des habitants." } },
+    { q: "Une autorisation officielle, délivrée par la mairie.", options: ["une charte", "un permis", "une demande"], answer: 1, fb: { 0: "Une charte est un texte de règles.", 2: "La demande, c'est ce qu'on envoie pour obtenir le permis." } }
+  ]
+});
+</script>
+</body>
+</html>

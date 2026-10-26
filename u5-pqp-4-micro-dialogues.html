@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Micro-dialogues : raconter avec un repère</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/systematisation.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a href="index.html" class="brand">
+      <span class="brand-badge">INSPIRE 3</span>
+      <span><span class="brand-title">Unité 5 · Comment améliorer son cadre de vie ?</span><br><span class="brand-sub">Inter 5 · Systématisation du plus-que-parfait</span></span>
+    </a>
+    <a href="systematisation-pqp.html" class="header-pill"><i class="fa-solid fa-list-check"></i>Les 6 activités</a>
+  </div>
+  <div class="oif-band"><span></span><span></span><span></span><span></span><span></span></div>
+</header>
+<main>
+  <nav class="breadcrumb"><a href="index.html">Accueil</a> › <a href="systematisation-pqp.html">Plus-que-parfait : systématisation</a> › Micro-dialogues</nav>
+  <p class="kicker">Unité 5 · Production orale</p>
+  <h1>Micro-dialogues : raconter avec un repère</h1>
+  <p class="lead">À deux, à l'oral. Tirez une carte ou choisissez-en une. Jouez la scène, puis changez de rôle.</p>
+
+  <div class="box">
+    <h3>La contrainte</h3>
+    <ul class="check">
+      <li>Au moins <b>1 passé composé</b> : le repère.</li>
+      <li>Au moins <b>2 plus-que-parfaits</b> pour revenir en arrière.</li>
+      <li>Au moins <b>1 marqueur</b> : déjà, ne… pas encore, auparavant, avant + nom, quand.</li>
+      <li>B réagit et pose au moins <b>deux questions</b>.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <div class="btn-row" style="margin-top:0">
+      <button type="button" class="btn primary" id="tirer">Tirer une carte au hasard</button>
+      <button type="button" class="btn" id="filtre" aria-pressed="false">Seulement la médiation</button>
+    </div>
+    <div class="btn-row">
+      <button type="button" class="btn" id="chrono">Minuteur 2 min</button>
+      <span class="timer" id="temps" aria-live="polite">2:00</span>
+    </div>
+  </div>
+
+  <div class="cards two" id="cartes"></div>
+
+  <div class="box">
+    <h3>Pour réagir</h3>
+    <p class="phrases">Ah bon ? Et qu'est-ce qui s'était passé avant ? · Tu avais déjà… ? · Ce n'est pas vrai ! · Heureusement que… · Si j'ai bien compris, … · Autrement dit, …</p>
+  </div>
+
+  <p>Suite : <a href="u5-pqp-5-ecrit.html">Production écrite →</a></p>
+</main>
+<footer class="site-footer">
+  <div class="inner">
+    <div><strong>Inter 5 · Inspire 3, unités 5 et 6</strong><br>Séquence pédagogique en classe inversée · FLE B1</div>
+    <div style="text-align:right"><span class="accent">Nadia Aguilar Neri</span><br>D'après Inspire 3, Hachette FLE</div>
+  </div>
+</footer>
+
+<script>
+var CARTES = [
+  { t: "Le nouvel appartement", med: false,
+    s: "A a déménagé le mois dernier.",
+    a: "A raconte le jour du déménagement et tout ce qu'il ou elle avait fait avant (recherches, visites, cartons).",
+    b: "B pose des questions : pourquoi ce quartier ? combien d'appartements avait-il / elle visités ?",
+    p: "« Enfin ! J'ai trouvé… J'avais visité… Mon ancien propriétaire avait augmenté le loyer… »" },
+  { t: "Les clés oubliées", med: false,
+    s: "Hier soir, A est arrivé(e) devant sa porte sans ses clés.",
+    a: "A explique ce qui s'était passé avant : où il / elle avait laissé les clés, pourquoi la voisine n'était pas là…",
+    b: "B réagit et propose des solutions pour la prochaine fois.",
+    p: "« Quand je suis arrivé(e), j'ai vu que… J'avais laissé mes clés… La voisine était partie… »" },
+  { t: "Retour dans le quartier d'enfance", med: false,
+    s: "Le week-end dernier, A est retourné(e) dans le quartier où il / elle avait grandi.",
+    a: "A raconte : tout avait changé ! Le parc, les magasins, son ancien immeuble…",
+    b: "B demande ce qui n'avait pas changé et ce que A a ressenti.",
+    p: "« Je suis retourné(e)… On avait construit… Ma boulangerie avait fermé… »" },
+  { t: "La visite du Havre", med: false,
+    s: "A a visité Le Havre pendant les vacances.",
+    a: "A raconte la visite et ce qu'il / elle avait lu ou vu avant de partir.",
+    b: "B ne connaît pas la ville : il / elle pose des questions sur Perret, le béton, l'appartement témoin.",
+    p: "« J'ai visité… Avant le voyage, j'avais lu que… On m'avait dit que… »" },
+  { t: "Le voisin bruyant", med: false,
+    s: "Samedi, A a frappé chez son voisin à 2 h du matin.",
+    a: "A raconte la scène.",
+    b: "B joue le voisin et explique ce qui s'était passé (une fête, un anniversaire…) et s'excuse.",
+    p: "« J'ai frappé à votre porte parce que… » · « Désolé, mes amis avaient organisé… »" },
+  { t: "L'appartement perdu", med: false,
+    s: "A a appelé l'agence pour un appartement idéal… trop tard !",
+    a: "A raconte à B : quelqu'un l'avait déjà loué.",
+    b: "B demande ce que A avait fait avant d'appeler et donne des conseils.",
+    p: "« J'ai appelé l'agence, mais quelqu'un avait déjà… J'avais pourtant envoyé mon dossier… »" },
+  { t: "Une annonce en espagnol", med: true,
+    s: "B est francophone et cherche un logement à Mexico. Hier, A a lu une annonce en espagnol pour lui / elle.",
+    a: "A explique l'annonce en français : type de logement, quartier, prix, ce que le propriétaire avait déjà rénové.",
+    b: "B pose des questions et dit si le logement l'intéresse.",
+    p: "« J'ai lu une annonce hier : c'est un… Le propriétaire avait refait… Autrement dit, … »" },
+  { t: "La critique de Sandra", med: true,
+    s: "A a lu la critique de Sandra sur Babelio (livre, p. 80). B ne l'a pas lue.",
+    a: "A résume la critique : ce que Sandra a aimé, ce qui l'a ennuyée, sa note.",
+    b: "B demande s'il / si elle a envie de lire le roman, et pourquoi.",
+    p: "« Sandra a mis trois étoiles parce que… Elle avait aimé… mais… »" },
+  { t: "Le témoignage d'Odette", med: true,
+    s: "A a écouté le témoignage d'Odette. B ne l'a pas écouté.",
+    a: "A raconte l'histoire en une minute.",
+    b: "B pose deux questions pour vérifier, puis reformule l'histoire en une phrase.",
+    p: "« C'est l'histoire d'une femme qui… Quand elle est sortie de la cave, sa rue avait disparu… »" },
+  { t: "L'image des cinq étages", med: true,
+    s: "B ne peut pas voir l'image « Les cinq étages du monde parisien » (1845).",
+    a: "A décrit l'image étage par étage et explique ce qu'elle montre sur la société de l'époque.",
+    b: "B essaie de dessiner l'immeuble à partir de la description, puis compare avec l'image.",
+    p: "« Au rez-de-chaussée, il y a… Plus on monte, plus… Sous les toits, … »" }
+];
+
+var box = document.getElementById("cartes");
+var seulementMed = false;
+function esc(s) { return s.replace(/[&<>]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]; }); }
+function afficher(choisie) {
+  box.innerHTML = "";
+  CARTES.forEach(function (c, i) {
+    if (seulementMed && !c.med) return;
+    var d = document.createElement("article");
+    d.className = "card" + (i === choisie ? " is-drawn" : "");
+    d.id = "carte-" + i;
+    d.innerHTML = "<h3>" + (c.med ? '<span class="tag med">Médiation</span>' : '<span class="tag duo">À deux</span>') + esc(c.t) + "</h3>" +
+      "<p>" + esc(c.s) + "</p>" +
+      '<ul class="roles"><li>' + esc(c.a).replace(/^(A|B) /, "<b>$1</b> ") + "</li><li>" + esc(c.b).replace(/^(A|B) /, "<b>$1</b> ") + "</li></ul>" +
+      '<p class="phrases">' + esc(c.p) + "</p>";
+    box.appendChild(d);
+  });
+}
+afficher(-1);
+document.getElementById("tirer").addEventListener("click", function () {
+  var possibles = CARTES.map(function (_, i) { return i; }).filter(function (i) { return !seulementMed || CARTES[i].med; });
+  var i = possibles[Math.floor(Math.random() * possibles.length)];
+  afficher(i);
+  var c = document.getElementById("carte-" + i);
+  if (c) c.scrollIntoView({ block: "center" });
+});
+document.getElementById("filtre").addEventListener("click", function () {
+  seulementMed = !seulementMed;
+  this.setAttribute("aria-pressed", String(seulementMed));
+  this.textContent = seulementMed ? "Toutes les cartes" : "Seulement la médiation";
+  afficher(-1);
+});
+
+var t = null, reste = 120, aff = document.getElementById("temps"), bt = document.getElementById("chrono");
+function maj() { aff.textContent = Math.floor(reste / 60) + ":" + String(reste % 60).padStart(2, "0"); }
+bt.addEventListener("click", function () {
+  if (t) { clearInterval(t); t = null; reste = 120; maj(); bt.textContent = "Minuteur 2 min"; return; }
+  reste = 120; maj(); bt.textContent = "Arrêter";
+  t = setInterval(function () {
+    reste--; maj();
+    if (reste <= 0) { clearInterval(t); t = null; aff.textContent = "Temps écoulé ! Changez de rôle."; bt.textContent = "Minuteur 2 min"; }
+  }, 1000);
+});
+</script>
+</body>
+</html>
